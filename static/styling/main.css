@@ -323,6 +323,8 @@ main {
 }
 .work>a>article>p{
   margin: 0;
+  padding: 0 2.5em;
+  text-align: center;
 }
 
 .more {
