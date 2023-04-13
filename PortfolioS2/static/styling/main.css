@@ -137,7 +137,6 @@ main {
   height: fit-content;
   background-color: var(--white);
   display: grid;
-  grid-column-gap: 2em;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
 }
@@ -145,26 +144,11 @@ main {
 .skill-set {
   margin-top: 1em;
   display: flex;
-  flex-direction: column;
   justify-content: end;
 }
 
-.skill-description {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.skill-description>p{
-  margin: 0;
-}
-.skill-description>h2{
-  margin: 0;
-}
-
 .wrapper {
-  width: 100%
+  width: 70%
 }
 
 .wrapper>article {
@@ -440,15 +424,16 @@ footer .footer-info {
 
 .mywork-section {
   display: grid;
-  grid-template-rows: repeat(4, auto);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto, auto);
 }
 
-.mywork-section a {
+.mywork-section>a {
   text-decoration: none;
   color: var(--white);
 }
 
-.mywork-section article {
+.mywork-section>a>article {
   background-color: var(--dark);
   display: flex;
   justify-content: center;
@@ -460,19 +445,8 @@ footer .footer-info {
   transition: transform .3s ease-in-out;
 }
 
-.mywork-section article:hover {
+.mywork-section>a>article:hover {
   transform: scale(.9);
-}
-
-.mywork-section>section>h4 {
-  grid-column: span 4;
-}
-
-.mywork-row {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(auto, auto);
-  height: 1fr;
 }
 
 .showcase-header {
