@@ -48,7 +48,10 @@
                     Thats is one of the main reasons why i chose Media design. Besides school i also work at Eindhoven Airport as <i>Flow coordinator</i>, i started working at Eindhoven Airport in the summer of 2022 as host beceause of the long lines, and at the end of 2022 i got promoted &#58;&#41;
                 </p>
             </article>
-            <section class="skill-set">
+            <section>
+                <p><i>Some more info.. or image</i></p>
+            </section>
+            <section id="LO" class="skill-set">
                 <section class="skill-description">
                     <h2>Where am i standing?</h2>
                     <p>(Learning outcomes)</p>
@@ -57,7 +60,6 @@
                     <article>
                         <p>Interactive Media</p>
                         <!-- Button to open modal -->
-                        <button id="loBtn">Learn more</button>
                     </article>
                     <section class="progress-bar">
                         <span class="progress-bar-fill" style="width: 25%;"></span>
@@ -65,7 +67,6 @@
 
                     <article>
                         <p>Development</p>
-                        <button id="devBtn">Learn more</button>
                     </article>
                     <section class="progress-bar">
                         <span class="progress-bar-fill" style="width: 25%;"></span>
@@ -73,7 +74,6 @@
 
                     <article>
                         <p>Design</p>
-                        <button id="desButton">Learn more</button>
                     </article>
                     <section class="progress-bar">
                         <span class="progress-bar-fill" style="width: 25%;"></span>
@@ -81,7 +81,6 @@
 
                     <article>
                         <p>Research</p>
-                        <button id="resButton">Learn more</button>
                     </article>
                     <section class="progress-bar">
                         <span class="progress-bar-fill" style="width: 1%;"></span>
@@ -89,7 +88,6 @@
 
                     <article>
                         <p>Communication</p>
-                        <button id="commButton">Learn more</button>
                     </article>
                     <section class="progress-bar">
                         <span class="progress-bar-fill" style="width: 25%;"></span>
@@ -97,11 +95,12 @@
 
                     <article>
                         <p>Professional Identity</p>
-                        <button id="proButton">Learn more</button>
                     </article>
                     <section class="progress-bar">
                         <span class="progress-bar-fill" style="width: 25%;"></span>
                     </section>
+
+                    <button id="loBtn"><i class="fa-sharp fa-solid fa-circle-info"></i>&nbsp;</i>Learn more</button>
 
                     <!-- The modal -->
                     <div id="loModal" class="modal">
@@ -189,26 +188,30 @@
     </footer>
 
     <script>
-        // Get the modal
-        var modal = document.getElementById("loModal");
-        // Get the button that opens the modal
-        var btn = document.getElementById("loBtn");
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        // When the user clicks the button, open the modal 
+        // Make a vriable modal, button and span(for closing) and give it the value of our modal, button and span(for closing)
+        const modal = document.getElementById("loModal");
+        const btn = document.getElementById("loBtn");
+        const span = document.getElementsByClassName("close")[0];
+
+        // If the value of the variable btn gets clicked we give the value of our modal variable the style 'display= block' this gives the idea that the modal opens
         btn.onclick = function() {
           modal.style.display = "block";
         }
-        // When the user clicks on <span> (x), close the modal
+
+        // If the value of our span variable is clicked (The X in the modal) it changes the value of our modal variable to none (this make will hide it from our page and won't take any space)
         span.onclick = function() {
           modal.style.display = "none";
         }
+
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
           if (event.target == modal) {
             modal.style.display = "none";
           }
         }
+
+        // I've worked with Modals before but wanted to have a modal for every seperate learning outcome, but i couldn't get this to work :(
+        // i used w3schools for help 
     </script>
 </body>
 </html>
