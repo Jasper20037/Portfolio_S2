@@ -533,6 +533,11 @@ footer .footer-info {
   background-size: cover;
 }
 
+#UCD-research {
+  background-image: url(../img/all-work/DOT-framework.png);
+  background-size: cover;
+}
+
 .work-timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -583,6 +588,10 @@ footer .footer-info {
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-content>section {
+  padding: 2em 5em;
 }
 
 /* The Close Button */
