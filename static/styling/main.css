@@ -142,6 +142,11 @@ main {
   grid-template-rows: auto auto;
 }
 
+.about-section>img {
+  height: 20em;
+  justify-self: center;
+}
+
 .skill-set {
   margin-top: 1em;
   display: flex;
