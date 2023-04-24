@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    --lcd-color: #bce8e0;
+}
+
+main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calculator {
+    display:  grid;
+    grid-template-columns: repeat(3, 4em);
+    grid-template-rows: repeat(7, 4em);
+    padding: 3em 2em;
+    background-color: #252525;
+    border-radius: 2em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.calculator>div {
+    grid-column: span 3;
+    background-color: var(--lcd-color);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}

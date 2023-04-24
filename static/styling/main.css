@@ -538,8 +538,33 @@ footer .footer-info {
   background-size: cover;
 }
 
-#UCD-research {
+#UCD-homework {
   background-image: url(../img/all-work/DOT-framework.png);
+  background-size: cover;
+}
+
+#calculator {
+  background-image: url(../img/all-work/calculator-card.png);
+  background-size: cover;
+}
+
+#js-practice {
+  background-image: url(../img/all-work/javascript.png);
+  background-size: cover;
+}
+
+#pacman {
+  background-image: url(../img/all-work/pacman.png);
+  background-size: cover;
+}
+
+#dashboard {
+  background-image: url(../img/all-work/dashboard.png);
+  background-size: cover;
+}
+
+#layout-rome {
+  background-image: url(../img/all-work/rome.png);
   background-size: cover;
 }
 
