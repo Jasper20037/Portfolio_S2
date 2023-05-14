@@ -314,11 +314,11 @@ main {
 }
 
 .recent1 {
-  background-image: url(../img/recent-work/PurePlane-card.png);
+  background-image: url(../img/recent-work/photo-portfolio.png);
   background-size: cover;
 }
 .recent2 {
-  background-image: url(../img/recent-work/Studentevents..JPG);
+  background-image: url(../img/recent-work/ancient-greece.png);
   background-size: cover;
 }
 
@@ -457,6 +457,7 @@ footer .footer-info {
 .mywork-section .card {
   text-decoration: none;
   color: var(--white);
+  text-align: center;
 }
 
 .mywork-section .card>article {
@@ -538,8 +539,28 @@ footer .footer-info {
   background-size: cover;
 }
 
-#UCD-homework {
+#the-team {
+  background-image: url(../img/all-work/team.png);
+  background-size: cover;
+}
+
+#user-rs {
+  background-image: url(../img/all-work/user-rs.png);
+  background-size: cover;
+}
+
+#UCD-ritm {
   background-image: url(../img/all-work/DOT-framework.png);
+  background-size: cover;
+}
+
+#UCD-pod {
+  background-image: url(../img/all-work/pod.png);
+  background-size: cover;
+}
+
+#UCD-ia {
+  background-image: url(../img/all-work/ia.png);
   background-size: cover;
 }
 
@@ -568,12 +589,24 @@ footer .footer-info {
   background-size: cover;
 }
 
+#p-portfolio {
+  background-image: url(../img/all-work/photo-portfolio.png);
+  background-size: cover;
+}
+
 .work-timeline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(auto, 1fr);
   grid-row-gap: 2em;
   padding: 2em 5em;
+}
+
+.gc-span-2 {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
 }
 
 .work-timeline h2 {
