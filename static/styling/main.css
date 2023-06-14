@@ -478,6 +478,7 @@ footer .footer-info {
 
 .mywork-section>section>h4 {
   grid-column: span 4;
+  font-size: 1.2rem;
 }
 
 .mywork-row {
@@ -539,6 +540,13 @@ footer .footer-info {
 
 
 /* Work */
+
+.label {
+  color: white;
+  padding: 8px;
+  background-color: #0000ff;
+}
+
 #StudentEvents{
   background-image: url(../img/all-work/Studentevents..JPG);
   background-size: cover;
@@ -580,7 +588,7 @@ footer .footer-info {
 }
 
 #modal {
-  background-image: url(../img/all-work/calculator-card.png);
+  background-image: url(../img/all-work/modal.png);
   background-size: cover;
 }
 
@@ -591,18 +599,39 @@ footer .footer-info {
 }
 
 #accordion {
-  background-image: url(../img/all-work/pacman.png);
+  background-image: url(../img/all-work/accordion.png);
   background-size: cover;
 }
 
-#timer {
-  background-image: url(../img/all-work/dashboard.png);
+#stopwatch {
+  background-image: url(../img/all-work/stopwatch.png);
   background-size: cover;
 }
 
-#timer {
-  background-image: url(../img/all-work/dashboard.png);
+#todo {
+  background-image: url(../img/all-work/todo.png);
   background-size: cover;
+}
+
+#json-webshop {
+  background-image: url(../img/all-work/webshop.png);
+  background-size: cover;
+}
+
+#report {
+  background-image: url(../img/all-work/report.png);
+  background-size: cover;
+}
+
+#reflection {
+  background-image: url(../img/all-work/reflection.png);
+  background-size: cover;
+}
+
+#git {
+  background-image: url(../img/all-work/github.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #layout-rome {
@@ -614,6 +643,7 @@ footer .footer-info {
   background-image: url(../img/all-work/photo-portfolio.png);
   background-size: cover;
 }
+
 
 .work-timeline {
   display: grid;

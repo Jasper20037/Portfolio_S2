@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    background-image: url(../img/timer.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 1.1em;
+    box-shadow: 0 0 3px;
+}
+
+#timer {
+    width: 100%;
+    font-size: 8rem;
+    text-align: center;
+    padding-top: .5em;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+
+.buttons>button {
+    margin: 0 1.1em;
+    border: none;
+}
+
+.buttons>button i {
+    font-size: 3rem;
+    padding: .2em;
+    color: #fff;
+    width: 2em;
+}
+
+#play {
+    background-color: green;
+}
+
+#pause {
+    background-color: orange;
+}
+
+#reset {
+    background-color: red;
+}

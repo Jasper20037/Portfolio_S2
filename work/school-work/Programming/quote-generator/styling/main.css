@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 1.5em 5em;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.break {
+    width: 100%;
+}
+
+.container>h2 {
+    margin: 0;
+}
+
+#new-quote {
+    padding: .5em 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #424242;
+    border-radius: .2em;
+    color: #ffffff;
+}

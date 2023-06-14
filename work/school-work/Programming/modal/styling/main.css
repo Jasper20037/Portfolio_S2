@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+#open-btn {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 15em;
+    height: 4em;
+    border-radius: .5em;
+    background: transparent;
+    font-weight: bold;
+    border:  solid 2px #ffff;
+    font-size: 1.2rem;
+    box-shadow: 0 0 3px black;
+    transition: .5s;
+}
+
+#open-btn:hover {
+    background-color: #ffff;
+    color: black;
+}
+
+#modal {
+    background-color: #ffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    height: 10em;
+    padding: 2em 5em;
+    border-radius: 1em;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    animation: animatemodal .4s;
+}
+
+#close-btn {
+    font-size: 3rem;
+}
+
+#close-btn:hover {
+    cursor: pointer;
+    font-size: 3rem;
+    color: #ff0000;
+}
+
+#modal-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /* Darkening the bakground */
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* Modal animation */
+
+@keyframes animatemodal {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        opacity: 1;
+    }
+}
