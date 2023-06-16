@@ -616,6 +616,28 @@ footer .footer-info {
 #json-webshop {
   background-image: url(../img/all-work/webshop.png);
   background-size: cover;
+  background-position: center;
+}
+
+#project-plan {
+  background-image: url(../img/all-work/projectplan.png);
+  background-size: cover;
+}
+
+#survey-results {
+  background-image: url(../img/all-work/survey.png);
+  background-size: cover;
+}
+
+#UCD-prototyping-p1 {
+  background-image: url(../img/all-work/prototype-research.png);
+  background-size: cover;
+}
+
+#UCD-prototyping-p2 {
+  background-image: url(../img/all-work/prototype-p2.png);
+  background-size: cover;
+  background-position: center;
 }
 
 #report {
